@@ -1,0 +1,97 @@
+//Breakpoints
+@mixin breakpoint($width) {
+
+    @if ($width == xs) {
+        @media (min-width: $xs) {
+            @content
+        }
+    }
+    @if ($width == xs-only) {
+        @media (max-width: $xs - 1) {
+            @content
+        }
+    }
+    @if ($width == sm) {
+        @media (min-width: $sm) {
+            @content
+        }
+    }
+    @if ($width == up-to-sm) {
+        @media (max-width: $sm - 1) {
+            @content
+        }
+    }
+    @if ($width == md) {
+        @media (min-width: $md) {
+            @content
+        }
+    }
+    @if ($width == mdx) {
+        @media (min-width: $mdx) {
+            @content
+        }
+    }
+    @if ($width == up-to-md) {
+        @media (max-width: $md - 1) {
+            @content
+        }
+    }
+    @if ($width == lg) {
+        @media (min-width: $lg) {
+            @content
+        }
+    }
+    @if ($width == up-to-lg) {
+        @media (max-width: $lg - 1) {
+            @content
+        }
+    }
+    @if ($width == xl) {
+        @media (min-width: $xl) {
+            @content
+        }
+    }
+    @if ($width == portrait) {
+        @media screen and (orientation: portrait) {
+            @content
+        }
+    }
+    @if ($width == landscape) {
+        @media screen and (orientation: landscape) {
+            @content
+        }
+    }
+}
+
+@mixin breakpointHeight($height) {
+    @if ($height == sm-h) {
+        @media (min-height: $sm-h) {
+            @content
+        }
+    }
+
+    @if ($height == md-h) {
+        @media (min-height: $md-h) {
+            @content
+        }
+    }
+
+    @if ($height == lg-h) {
+        @media (min-height: $lg-h) {
+            @content
+        }
+    }
+
+    @if ($height == xl-h) {
+        @media (min-height: $xl-h) {
+            @content
+        }
+    }
+}
+
+
+
+// Opacity transition
+@mixin opacity ($t) {
+    transition: opacity $t ease-in-out, visibility $t ease-in-out, transform $t ease-in-out;
+}

@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    color: $gray;
+
+    @include breakpoint(md) {
+        font-size: 24px;
+    }
+} 
+
+.no-padding {
+    padding: 0 15px !important;
+
+    @include breakpoint(md) {
+        padding: 0 !important;
+    }
+}
+
+.no-padding-competition {
+    padding: 0 !important;
+}
+
+.spacer {
+    position: relative;
+    display: block;
+
+    &.s1 {
+        height: 1rem;
+    }
+    &.s2 {
+        height: 2rem;
+    }
+    &.s3 {
+        height: 3rem;
+    }
+    &.s4 {
+        height: 4rem;
+    }
+}
+
+.hide-on-xs {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.show-on-xs {
+    display: block;
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.hide-on-sm {
+    @include breakpoint(md) {
+        display: none;
+    }
+
+    @include breakpoint(mdx) {
+        display: block;
+    }
+}
+
+.show-on-sm {
+    @include breakpoint(sm) {
+        display: block;
+    }
+
+    @include breakpoint(mdx) {
+        display: none;
+    }
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}

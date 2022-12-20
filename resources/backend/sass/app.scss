@@ -1,0 +1,85 @@
+@import "dashboard/variables";
+@import "dashboard/mixins";
+@import "dashboard/core-bootstrap";
+
+// Core Components
+@import "dashboard/buttons";
+@import "dashboard/checkboxes";
+@import "dashboard/radios";
+@import "dashboard/forms";
+@import "dashboard/input-group";
+@import "dashboard/images";
+@import "dashboard/navbar";
+@import "dashboard/alerts";
+@import "dashboard/headers";
+@import "dashboard/type";
+@import "dashboard/tabs";
+@import "dashboard/tooltip";
+@import "dashboard/popover";
+@import "dashboard/dropdown";
+@import "dashboard/togglebutton";
+@import "dashboard/ripples";
+@import "dashboard/footers";
+@import "dashboard/sidebar-and-main-panel";
+@import "dashboard/fixed-plugin";
+@import "dashboard/tables";
+@import "dashboard/misc";
+@import "dashboard/social-buttons";
+
+@import "dashboard/cms";
+
+@import "dashboard/cards";
+@import "dashboard/cards/card-stats";
+@import "dashboard/cards/card-profile";
+@import "dashboard/cards/card-plain";
+
+//plugin scss
+@import "dashboard/plugins/animate";
+@import "dashboard/plugins/chartist";
+@import "dashboard/plugins/perfect-scrollbar";
+
+@import "dashboard/responsive";
+
+
+.alert-chat {
+	padding: 10px 15px 15px;
+	background-color: rgba(189, 189, 189, 0.2);
+	color: #000;
+
+	.name {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		margin-bottom: 10px;
+		display: flex;
+		p {
+			margin-bottom: 1px;
+
+			small {
+				font-size: 11px;
+			}
+		}
+	}
+
+	.action-btn {
+		margin-left: 20px;
+		a {
+			padding: 0 5px;
+			&:hover {
+				color: #000;
+			}
+			&.done {
+				color: #5ec313;
+			}
+			&.delete {
+				color: #e74033;
+			}
+			i {
+				font-size: 18px;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 13px;
+	}
+}

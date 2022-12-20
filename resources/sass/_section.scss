@@ -1,0 +1,150 @@
+
+section {
+    padding: 30px 0;
+
+    &.big-padding {
+        padding: 100px 0;
+    }
+
+    &.quiz-section {
+        padding-top: 100px;
+
+        @include breakpoint(md) {
+            padding-top: 200px;
+        }
+    }
+
+    &.agenda {
+        padding: 20px 0 70px;
+    }
+
+    &.contact {
+        background: url(/images/bg-contact-m.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 70px 0;
+        background-size: cover;
+
+        @include breakpoint(md) {
+            background: url(/images/bg-contact.svg);
+        }
+    }
+
+    &.group {
+        background: url(/images/bg-group-m.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 130px 0;
+        height: auto;
+        background-size: cover;
+
+        @include breakpoint(md) {
+            padding: 100px 0;
+            background: url(/images/bg-group.svg);
+        }
+
+        p {
+            padding-top: 0;
+
+            @include breakpoint(md) {
+                padding-top: 150px;
+            }
+        }
+
+        .title-group-date {
+            font-size: 20px;
+            color: #E20067;
+            font-weight: 600;
+            text-align: right;
+            padding-top: 105px;
+
+            @include breakpoint(md) {
+                padding-top: 100px;
+            }
+        }
+    }
+
+    &.speakers {
+        background: url(/images/bg-prelegenci-m.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        background-size: cover;
+
+        @include breakpoint(md) {
+            background: url(/images/bg-prelegenci.svg);
+            padding: 100px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    &.conference {
+        position: relative;
+        background: transparent;
+
+        @include breakpoint(md) {
+            background: #eef0f8;
+        }
+
+        &:before {
+            position: absolute;
+            content: url(/images/bg-conference-top.svg);
+            top: -120px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1;
+            display: none;
+
+            @include breakpoint(md) {
+                display: block;
+            }
+        }
+
+        &:after {
+            position: absolute;
+            content: url(/images/bg-conference-bottom.svg);
+            bottom: -130px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            display: none;
+
+            @include breakpoint(md) {
+                display: block;
+            }
+        }
+    }
+
+    &.growing {
+        background: url(/images/bg-growing-m.svg);
+        width: 100%;
+        background-repeat: no-repeat;
+        padding: 30px 0 150px;
+        height: auto;
+        background-size: cover;
+
+        @include breakpoint(md) {
+            background: url(/images/bg-growing.svg);
+            padding: 30px 0 200px;
+            background-repeat: no-repeat;
+        }
+
+    }
+    &.stream-container {
+        h1 {
+            color: #0044D2;
+            font-size: 34px;
+            text-align: center;
+            font-weight: 600;
+        }
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 15%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+#transmissionModal {
+    .modal-dialog {
+        overflow: hidden !important;
+    }
+
+    .close {
+        opacity: 1 !important;
+
+        span {
+            font-size: 40px;
+            opacity: 1;
+            font-weight: 100;
+            padding: 10px;
+            color: #0A44D2;
+        }
+    }
+
+    h2 {
+        color: #0044D2;
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+    }
+
+    .modal-header {
+        border: none;
+    }
+
+    .modal-body p {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .btn-primary {
+        border-radius: 0;
+        color: white;
+        font-size: 16px;
+        background-color: #0A44D2;
+        padding: 10px 30px;
+        margin-bottom: 25px;
+    }
+
+    .modal-dialog {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+        @media(max-width: 768px) {
+            min-height: calc(100vh - 20px);
+        }
+    }
+
+    .modal-header {
+        padding: 0;
+    }
+
+}
